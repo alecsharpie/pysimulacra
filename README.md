@@ -28,6 +28,7 @@ data = ds.fetch_all_data()
 ```
 here `data` is a dictionary containing all tables from db, key = table_name, value = pd.DataFrame tables.
 
+```
 Table : col1, col2, col3, ...
 ----------
 survey  :  id, qid, rating
@@ -36,3 +37,4 @@ images  :  id, gid, idx
 paths  :  iid, path
 ratings  :  sid, iid, rating, verified
 upscales  :  iid, method
+```
