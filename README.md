@@ -1,4 +1,4 @@
-# Simulacra Aesthetic Captions Dataset Python wrapper
+
 
 # Dataset
 
@@ -17,6 +17,8 @@ make clean install test                # install and test
 ```
 
 # Example
+
+Download the data from the repository linked above and instantiate the class pointing to the sql db. Do it manually (eg with chrome) if curl isn't working
 
 
 ```python
