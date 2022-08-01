@@ -12,8 +12,7 @@ Clone the project and install it:
 ```bash
 git clone git@github.com:alecsharpie/pysimulacra.git
 cd pysimulacra
-pip install -r requirements.txt
-make clean install test                # install and test
+make install # or `pip install .`
 ```
 
 # Example
