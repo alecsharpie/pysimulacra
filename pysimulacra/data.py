@@ -54,3 +54,15 @@ class SimulacraData:
         df = pd.read_sql_query(query, self.conn)
 
         return df
+
+    def get_prompts_and_ratings(self):
+
+        query = """
+            SELECT images.id AS img_id, generations.prompt AS img_prompt, AVG(ratings.rating) AS img_rating FROM images
+            JOIN generations ON images.gid = generations.id
+            JOIN ratings ON images.id = ratings.iid
+            GROUP BY img_prompt
+            """
+        df = pd.read_sql_query(query, self.conn)
+
+        return df

@@ -42,7 +42,10 @@ def reprocess_archives(path_input_base, path_output_base):
 
 
 if __name__ == '__main__':
-    path_input_base = pathlib.Path(r'/path/to/simulacra-aesthetic-captions')
-    path_output_base = pathlib.Path(r'/path/to/simulacra-aesthetic-captions-output')
+    path_input_base = pathlib.Path(
+        r'raw_data/'
+    )
+    path_output_base = pathlib.Path(
+        r'raw_data/new/')
 
     reprocess_archives(path_input_base, path_output_base)
