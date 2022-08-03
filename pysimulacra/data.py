@@ -66,3 +66,16 @@ class SimulacraData:
         df = pd.read_sql_query(query, self.conn)
 
         return df
+
+
+    def get_image_paths_and_prompts_and_ratings(self):
+
+        query = """
+            SELECT images.id AS img_id, generations.prompt AS img_prompt, paths.path as img_path, ratings.rating AS img_rating FROM images
+            JOIN generations ON images.gid = generations.id
+            JOIN ratings ON images.id = ratings.iid
+            JOIN paths ON images.id = paths.iid
+            """
+        df = pd.read_sql_query(query, self.conn)
+
+        return df

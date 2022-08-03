@@ -39,3 +39,11 @@ paths  :  iid, path
 ratings  :  sid, iid, rating, verified
 upscales  :  iid, method
 ```
+
+```
+ds.get_image_paths_and_prompts()
+
+ds.get_prompts_and_ratings()
+
+ds.get_image_paths_and_prompts_and_ratings()
+```
