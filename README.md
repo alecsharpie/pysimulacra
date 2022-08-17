@@ -5,7 +5,7 @@
 download dataset and get info here:
 https://github.com/JD-P/simulacra-aesthetic-captions
 
-![Entity Relationship Diagram](https://github.com/alecsharpie/pysimulacra/blob/master/ERD.png?raw=true)
+![Entity Relationship Diagram](https://github.com/alecsharpie/pysimulacra/blob/main/ERD.png?raw=true)
 
 # Install
 
