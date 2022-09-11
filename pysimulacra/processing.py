@@ -5,7 +5,7 @@ import tarfile
 
 
 def reprocess_archives(path_input_base, path_output_base):
-    archive_paths = list(sorted([p for p in path_input_base.glob('*.tar')]))
+    archive_paths = list(sorted(list(path_input_base.glob('*.tar'))))
 
     for input_tar_path in archive_paths:
         path_output_dir = path_output_base / input_tar_path.stem

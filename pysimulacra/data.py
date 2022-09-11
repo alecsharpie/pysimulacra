@@ -51,9 +51,7 @@ class SimulacraData:
             JOIN generations ON images.gid = generations.id
             JOIN paths ON images.id = paths.iid
             """
-        df = pd.read_sql_query(query, self.conn)
-
-        return df
+        return pd.read_sql_query(query, self.conn)
 
     def get_prompts_and_ratings(self):
 
@@ -63,9 +61,7 @@ class SimulacraData:
             JOIN ratings ON images.id = ratings.iid
             GROUP BY img_prompt
             """
-        df = pd.read_sql_query(query, self.conn)
-
-        return df
+        return pd.read_sql_query(query, self.conn)
 
 
     def get_image_paths_and_prompts_and_ratings(self):
@@ -76,6 +72,4 @@ class SimulacraData:
             JOIN ratings ON images.id = ratings.iid
             JOIN paths ON images.id = paths.iid
             """
-        df = pd.read_sql_query(query, self.conn)
-
-        return df
+        return pd.read_sql_query(query, self.conn)
